@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css.css">
+
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
+    <!-- jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>iwin888</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="main-box grid grid-cols-12 gap-2 px-20 pt-10 relative">
+        <div class="col-span-3 w-full fixed">
+            <div class="logo w-64">
+                <img src="./assets/img/logo.png" alt="" class="w-full">
+            </div>
+        </div>
+        <div class="col-span-7">
+            <div class="top-banner">
+                <img src="./assets/img/slogan.png" alt="">
+            </div>
+            <div class="user grid grid-cols-12 gap-0">
+                <div class="col-span-6 p-0">
+                    <a href="#" id="open-btn-login">
+                        <img src="./assets/img/tab-dangky.png" alt="" class="h-24 float-right">
+                    </a>
+                </div>
+                <div class="col-span-5 p-0">
+                    <a href="#" id="open-btn-register">
+                        <img src="./assets/img/tab-dangnhap-active.png" alt="" class="h-24 float-left">
+                    </a>
+                </div>
+            </div>
+            <div class="video p-5">
+                <video loop autoplay muted controls class="border-2 border-yellow-500">
+                    <source src="./assets/video/1.mp4">
+                </video>
+            </div>
+        </div>
+        <div class="col-span-2 pt-10 fixed right-10">
+            <div class="slider">
+                <div class="top-img">
+                    <img src="./assets/img/de.png" alt="">
+                </div>
+                <div class="slide_viewer">
+                    <div class="slide_group">w
+                        <div class="slide">
+                            <img src="./assets/img/330 x 690 Abort01 copy.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/330 x 690 Abort01.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/330 x 690 Artbord 03.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/330 x 690 Artbord 04.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide_buttons"></div>
+                </div>
+            </div>
+            <div class="flex justify-between items-center">
+                <a href="#">
+                    <img src="./assets/img/phone.png" alt="" class="w-20">
+                    <p class="text-white text-center font-bold text-xs">HOTLINE</p>
+                </a>
+                <a href="#">
+                    <img src="./assets/img/phone.png" alt="" class="w-20">
+                    <p class="text-white text-center font-bold text-xs">CSKH</p>
+                </a>
+                <a href="#">
+                    <img src="./assets/img/icon-livechat.png" alt="" class="w-20">
+                    <p class="text-white text-center font-bold text-xs">CHART</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="form hidden" id="form">
+        <div class="main-bg-form">
+            <div class="bg-form-login" id="form-login">
+                <div class="close-form absolute top-0 right-0" id="close-btn-login">
+                    <i class="fa fa-times font-bold text-xl text-yellow-500 border-2 border-yellow-500 p-2 rounded-full w-8 h-8 flex justify-center items-center"></i>
+                </div>
+                <img src="./assets/img/bg-form.png" alt="">
+                <div class="input-1">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-2">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="btn-login">
+                    <img src="./assets/img/btn-login.png" alt="">
+                </div>
+            </div>
+            <div class="bg-form-register hidden" id="form-register">
+                <div class="close-form absolute top-0 right-0" id="close-btn-register">
+                    <i class="fa fa-times font-bold text-xl text-yellow-500 border-2 border-yellow-500 p-2 rounded-full w-8 h-8 flex justify-center items-center"></i>
+                </div>
+                <img src="./assets/img/bg-form.png" alt="">
+                <div class="input-1">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-2">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="input-3">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <div class="btn-register">
+                    <img src="./assets/img/btn-register.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-mobile"></div>
+    <div class="header-mobile w-full flex justify-between items-center">
+        <div class="call">
+            <img src="./assets/img/phone.png" alt="" class="w-16">
+        </div>
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="" class="w-40">
+        </div>
+        <div class="chart">
+            <img src="./assets/img/icon-livechat.png" alt="" class="w-16">
+        </div>
+    </div>
+    <div class="banner-mobile">
+        <img src="./assets/img/slogan.png" alt="" class="w-full">
+    </div>
+    <div class="video-mobile p-2">
+        <video loop autoplay muted class="border-2 border-yellow-500">
+            <source src="https://iwin88.shop/images/buyu.mp4">
+        </video>
+    </div>
+    <div class="go-to">
+        <a href="https://iwin888.com/">
+            <img src="./assets/img/btn-playweb.png" alt="" class="p-3 m-auto">
+        </a>
+        <img src="./assets/img/hoac.png" alt="" class="m-auto w-40">
+        <a href="#" class="download">
+            <img src="./assets/img/btn-ios.png" alt="" class="w-56 m-auto p-5">
+        </a>
+    </div>
+    <div class="footer">
+        <div class="title bg-yellow-500 shadow text-center text-red-800 font-bold">
+            <p>HƯỚNG DẪN TẢI FILE CÀI ĐẶT</p>
+        </div>
+        <div class="detail bg-gray-700">
+            <h1 class="text-yellow-500 font-bold text-xs py-4 px-2">BƯỚC 1</h1>
+            <p class="text-xs text-yellow-600"><span class="text-xs">&#9679;</span>&nbsp;Bấm chọn tải bản cài đặt</p>
+            <p class="text-xs text-yellow-600"><span class="text-xs">&#9679;</span>&nbsp;Mở file vừa tải về, thông thường sẽ có dạng *.apk</p>
+            <h1 class="text-yellow-500 font-bold text-xs py-4 px-2">BƯỚC 2</h1>
+            <p class="text-xs text-yellow-600"><span class="text-xs">&#9679;</span>&nbsp;Bật cho phép cài đặt ứng dụng từ nguồn khác CHPLAY</p>
+            <p class="text-xs text-yellow-600"><span class="text-xs">&#9679;</span>&nbsp;Bấm chọn OK</p>
+            <p class="text-xs text-yellow-600"><span class="text-xs">&#9679;</span>&nbsp;Bấm chọn cài đặt</p>
+            <h1 class="text-yellow-500 font-bold text-xs py-4 px-2">BƯỚC 3</h1>
+            <p class="text-xs text-yellow-600"><span class="text-xs">&#9679;</span>&nbsp;Trở về màn hình chính</p>
+            <p class="text-xs text-yellow-600"><span class="text-xs">&#9679;</span>&nbsp;Chọn biểu tượng IWIN88CLUB để trải nghiệm</p>
+        </div>
+        <div class="flex justify-between items-center bg-gray-800 mt-3">
+            <a href="#" class="text-white text-sm">GIỚI THIỆU</a>
+            <span class="text-white">|</span>
+            <a href="#" class="text-white text-sm">CHÍNH SÁCH BẢO MẬT</a>
+            <span class="text-white">|</span>
+            <a href="#" class="text-white text-sm">LIÊN HỆ</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

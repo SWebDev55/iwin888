@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    background: url(./img/Background-1.png);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.bg-mobile,
+.header-mobile,
+.banner-mobile,
+.video-mobile,
+.go-to,
+.footer{
+    display: none !important;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 250px;
+    position: relative;
+    height: 480px;
+}
+
+.slider .top-img{
+    width: 100%;
+}
+.slider .top-img img{
+    width: 100%;
+}
+.slide_viewer {
+    width: 200px;
+    height: 420px;
+    overflow: hidden;
+    margin: auto;
+}
+  
+.slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+  
+.slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+  
+.slide:first-child {
+    display: block;
+}
+  
+.slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+  
+a.slide_btn {
+    color: #e1e100;
+    font-size: 30px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.slide_btn.active, .slide_btn:hover {
+    color: #804000;
+    cursor: pointer;
+}
+.top-banner{
+    width: 600px;
+    margin: auto;
+}
+.top-banner img{
+    width: 100%;
+}
+.main-box .col-span-7{
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000ad;
+    z-index: 200;
+}
+.form .main-bg-form{
+    width: 500px;
+    margin: auto;
+    padding: 100px 0px;
+}
+.form .main-bg-form .bg-form-login{
+    position: relative;
+}
+.form .main-bg-form .bg-form-login .input-1{
+    background: url(./img/bg-input-active.png);
+    width: 95%;
+    margin: auto;
+    height: 49px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+.form .main-bg-form .bg-form-login .input-2{
+    background: url(./img/bg-input-active.png);
+    width: 95%;
+    margin: auto;
+    height: 49px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60%;
+    left: 2%;
+}
+.form .main-bg-form .bg-form-login .btn-login{
+    width: 95%;
+    margin: auto;
+    position: absolute;
+    top: 90%;
+    left: 2%;
+}
+.form .main-bg-form .bg-form-login .input-1 input,
+.form .main-bg-form .bg-form-login .input-2 input{
+    position: absolute;
+    padding: 11px;
+    width: 375px;
+    top: 2px;
+    left: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+
+
+.form .main-bg-form .bg-form-register{
+    position: relative;
+}
+.form .main-bg-form .bg-form-register .input-1{
+    background: url(./img/bg-input-active.png);
+    width: 95%;
+    margin: auto;
+    height: 49px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+.form .main-bg-form .bg-form-register .input-2{
+    background: url(./img/bg-input-active.png);
+    width: 95%;
+    margin: auto;
+    height: 49px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 55%;
+    left: 2%;
+}
+.form .main-bg-form .bg-form-register .input-3{
+    background: url(./img/bg-input-active.png);
+    width: 95%;
+    margin: auto;
+    height: 49px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+}
+.form .main-bg-form .bg-form-register .btn-register{
+    width: 95%;
+    margin: auto;
+    position: absolute;
+    top: 90%;
+    left: 2%;
+}
+.form .main-bg-form .bg-form-register .btn-register img{
+    width: 100%;
+    height: 100%;
+}
+.form .main-bg-form .bg-form-register .input-1 input,
+.form .main-bg-form .bg-form-register .input-2 input,
+.form .main-bg-form .bg-form-register .input-3 input{
+    position: absolute;
+    padding: 11px;
+    width: 375px;
+    top: 2px;
+    left: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+}
+footer{
+    bottom: -10%;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .bg,
+    .main-box,
+    .form{
+        display: none !important;
+    }
+    .header-mobile{
+        display: flex !important;
+    }
+    .banner-mobile,
+    .video-mobile,
+    .go-to,
+    .footer{
+        display: block !important;
+    }
+    .header-mobile{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .bg-mobile{
+        background: url(./img/bg-mobile.jpg.png);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        display: block !important;
+    }
+    .banner-mobile{
+        width: 90%;
+        margin: auto;
+    }
+    footer{
+        display: none;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    .bg,
+    .main-box,
+    .form{
+        display: none !important;
+    }
+    .header-mobile{
+        display: flex !important;
+    }
+    .banner-mobile,
+    .video-mobile,
+    .go-to,
+    .footer{
+        display: block !important;
+    }
+    .header-mobile{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    .bg-mobile{
+        background: url(./img/bg-mobile.jpg.png);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        display: block !important;
+    }
+    .banner-mobile{
+        width: 90%;
+        margin: auto;
+    }
+    .download img{
+        width: 70%;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .bg{
+        background-size: 100% 100%!important;
+    }
+    .main-box{
+        width: 100%;
+        padding: 0px !important;
+    }
+    .main-box .col-span-3{
+        width: 20%;
+    }
+    .main-box .col-span-3 .logo{
+        width: 100%;
+    }
+    .main-box .col-span-3 .logo img{
+        width: 100%;
+    }
+    .main-box .col-span-2{
+        width: 20%;
+        padding: 0px !important;
+        right: 0px !important;
+    }
+    .slider {
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        height: 380px;
+    }
+    .slider .slide_viewer {
+        width: 90%;
+        height: 330px;
+        overflow: hidden;
+        margin: auto;
+    }
+    .main-box .col-span-7{
+        width: 60%;
+    }
+    .top-banner{
+        width: 100%;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    .main-box{
+        width: 100%;
+        padding: 0px !important;
+    }
+    .main-box .col-span-3{
+        width: 20%;
+    }
+    .main-box .col-span-3 .logo{
+        width: 100%;
+    }
+    .main-box .col-span-3 .logo img{
+        width: 100%;
+    }
+    .main-box .col-span-2{
+        width: 20%;
+        padding: 0px !important;
+        right: 0px !important;
+    }
+    .slider {
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        height: 450px;
+    }
+    .slider .slide_viewer {
+        width: 90%;
+        height: 400px;
+        overflow: hidden;
+        margin: auto;
+    }
+    .main-box .col-span-7{
+        width: 60%;
+    }
+    .top-banner{
+        width: 100%;
+    }
+}
